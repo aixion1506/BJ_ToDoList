@@ -1,0 +1,9 @@
+#weather {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgba(255,255,255,0.6);
+}
