@@ -1,7 +1,7 @@
 // OpenWeatehr API KEY
 const API_KEY = '3e8fecef20315b4c5937a7b88d7302a0';
 
-function OpenWeatehrAPI(position) {
+const OpenWeatehrAPI = (position) => {
   //api 함수선언
   const lat = position.coords.latitude; // api 위도
   const lon = position.coords.longitude; // api 경도
@@ -17,11 +17,11 @@ function OpenWeatehrAPI(position) {
       city.innerText = data.name; // city의 innerText에 data의 도시 이름을 할당
     })
   );
-}
+};
 
-function API_Error() {
+const API_Error = () => {
   //에러 발생시, 경고문 출력
   alert("Can't find you. No weather for you.");
-}
+};
 
 navigator.geolocation.getCurrentPosition(OpenWeatehrAPI, API_Error); // 해당 메서드 호출후, 성공시 onGeoOk, 실패시 onGeoError
