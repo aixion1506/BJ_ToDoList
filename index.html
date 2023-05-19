@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <!-- 로그인 박스
+    <div class="LoginContainer">
+      <form id="Loginform" class="Hidden">
+        <input
+          required
+          maxlength="20"
+          type="text"
+          placeholder=" 사용자의 이름을 입력해주세요." />
+      </form>
+      <h1 id ="Nameform" class ="Hidden">
+    </div> -->
+
+    <!-- 메인 전체 컨테이너 -->
+    <div class="MainContainer">
+      <!-- 상단 컨테이너 -->
+      <div class="ControlCenterContainer">
+        <!-- 상단 박스 -->
+        <div id="ControlCenterBox" class="Terminal Box">
+        <!-- 상단 좌측 박스 -->
+          <div id="Top_LeftBox" class="Terminal Box">
+            <!-- 상단 좌측 박스 내용 -->
+            <div id="clock">
+              <span class="clock__date"></span>
+              <span class="clock__time"></span>
+            </div>
+          </div>
+         <!-- 상단 우측 박스 -->
+         <div id="Top_RightBox" class="Terminal Box">
+          <!-- 상단 우측 박스 내용 -->
+            <div id="weather">
+             <span class="Weather_weather"></span>
+              <span class="Weatehr_city"></span>
+           </div>
+          </div>
+       </div>
+      </div>
+ 
+
+    <!-- 본문 컨테이너 -->
+    <div class="MainTextContainer">
+      <!-- 본문 전체 박스 -->
+      <div id="MainTextBox" class="Terminal Space">
+        <!-- 본문 제목 박스 -->
+        <div class="MainTextTitleBox">ToDoList</div>
+        <!-- 본문 내용 박스 -->
+        <div class="MainTextBox"></div>
+          <!-- 본문 내용 폼 -->
+          <form id="MainTextForm">
+            <!-- 본문 내용 입력 -->
+            <input type="text"
+                   type="checkbox"
+                   placeholder="Let's write a todolist!"
+                   />
+          </form>  
+          <ul id="ToDoList"></ul>        
+      </div>
+    </div>
+  </body>
+</html>
