@@ -15,7 +15,7 @@
   margin-right: -20px;
 }
 
-.MainTextContainer {
+.TodoContainer {
   height: 100%;
   width: 40%;
   display: flex;
@@ -24,17 +24,17 @@
   margin-left: -20px;
 }
 
-#Top_LeftBox {
-  height: 30%;
+#ControlCenterBox_1 {
+  height: 50%;
   background: var(--black);
 }
 
-#Top_RightBox {
-  height: 30%;
+#ControlCenterBox_2 {
+  height: 50%;
   background: var(--black);
 }
 
-#MainTextBox {
+#TodoBox {
   height: 100%;
   background: var(--black);
 }

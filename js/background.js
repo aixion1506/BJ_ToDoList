@@ -1,17 +1,17 @@
 // 이미지 파일 이름을 담은 배열
-const images = ['cat1.jpg', 'dog1.jpg'];
+const Images = ['cat1.jpg', 'dog1.jpg'];
 // 배열에서 랜덤으로 이미지 선택
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const RandomImage = Images[Math.floor(Math.random() * Images.length)];
 // 선택된 이미지로 배경 이미지 URL 생성
-const bgImage = `url(img/${chosenImage})`;
+const Background = `url(img/${RandomImage})`;
 
 // 배경화면 랜덤 함수
-const randomBackground = () => {
+const RandomBackground = () => {
   // body 요소의 배경 이미지로 설정
-  document.body.style.backgroundImage = bgImage;
+  document.body.style.backgroundImage = Background;
 };
 
 // 초기에 한 번 배경 이미지 설정
-randomBackground();
+RandomBackground();
 // 1초마다 배경 이미지 업데이트
-setInterval(randomBackground, 1000);
+setInterval(RandomBackground, 1000);

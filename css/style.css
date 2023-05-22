@@ -2,11 +2,10 @@
 @import 'reset.css';
 @import 'variables.css';
 @import 'login.css';
-@import 'center.css';
+@import 'main.css';
 @import 'terminal.css';
 @import 'clock.css';
 @import 'weather.css';
-@import 'quote.css';
 @import 'todo.css';
 
 body {
@@ -15,9 +14,9 @@ body {
   background-size: 100% 100%;
   padding: 100px;
   box-sizing: border-box;
-  font-family: 'Nanum Brush Script', cursive;
+  /* font-family: 'Nanum Brush Script', cursive; */
 }
 
-.hidden {
+.Hidden {
   display: none;
 }

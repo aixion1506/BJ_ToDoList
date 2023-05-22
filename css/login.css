@@ -1,4 +1,4 @@
-.login {
+.LoginContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@
   height: 50px;
 }
 
-#login-form input {
+#Loginform input {
   width: 500px;
   height: 50px;
   border: none;
@@ -15,10 +15,10 @@
   background-color: rgba(233, 233, 233, 0.8);
 }
 
-#login-form input::placeholder {
+#Loginform input::placeholder {
   text-align: center;
 }
 
-#greeting {
+#Nameform {
   font-size: 40px;
 }

@@ -1,5 +1,5 @@
-const clockDate = document.querySelector('.clock__date');
-const clockTime = document.querySelector('.clock__time');
+const ClockDate = document.querySelector('.Clock__Date');
+const ClockTime = document.querySelector('.Clock__Time');
 
 // 함수 getClock 선언
 const getClock = () => {
@@ -19,10 +19,10 @@ const getClock = () => {
   // 변수 seconds에 clock의 현재 초을 사져와서 문자열 길이는 2로 맞추고 앞자리는 0으로 시작
   const seconds = String(clock.getSeconds()).padStart(2, '0');
 
-  // 변수 clockDate 요소 innerText에 년,월,일을 할당
-  clockDate.innerText = `${year}년 ${month}월 ${dayOfMonth}일`;
-  // 변수 clockTime 요소 innerText에 시간,분,초를 할당
-  clockTime.innerText = `${hours}:${minutes}:${seconds}`;
+  // 변수 ClockDate 요소 innerText에 년,월,일을 할당
+  ClockDate.innerText = `${year}년 ${month}월 ${dayOfMonth}일`;
+  // 변수 ClockTime 요소 innerText에 시간,분,초를 할당
+  ClockTime.innerText = `${hours}:${minutes}:${seconds}`;
 };
 
 getClock(); // 함수 getClock 호출

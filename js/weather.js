@@ -9,8 +9,8 @@ const OpenWeatehrAPI = (position) => {
   fetch(url).then((response) =>
     response.json().then((data) => {
       // api 주소를 호출, response는 서버로 응답받는 객체, 서버데이터를 json으로 저장, 변수 data에 json을 사용
-      const weather = document.querySelector;
-      const city = document.querySelector;
+      const weather = document.querySelector('#weather span:first-child');
+      const city = document.querySelector('#weather span:last-child');
       weather.innerText = `${data.weather[0].main} ${Math.round(
         data.main.temp
       )} 도`; // weather의 innerText에 data에서 가져온 날씨,온도 정보를 표시

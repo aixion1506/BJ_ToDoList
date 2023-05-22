@@ -22,50 +22,68 @@
 
     <!-- 메인 전체 컨테이너 -->
     <div class="MainContainer">
-      <!-- 상단 컨테이너 -->
+      <!-- 좌측 제어센터 컨테이너 -->
       <div class="ControlCenterContainer">
-        <!-- 상단 박스 -->
-        <div id="ControlCenterBox" class="Terminal Box">
-        <!-- 상단 좌측 박스 -->
-          <div id="Top_LeftBox" class="Terminal Box">
-            <!-- 상단 좌측 박스 내용 -->
-            <div id="clock">
-              <span class="clock__date"></span>
-              <span class="clock__time"></span>
-            </div>
+        <!-- 1번째 좌측 박스 -->
+          <div id="ControlCenterBox_1" class="terminal space shadow">
+             <!-- 1번째 박스 상단 -->
+           <div class="top">
+          <!-- 1번째 박스 상단 버튼 -->
+          <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
           </div>
-         <!-- 상단 우측 박스 -->
-         <div id="Top_RightBox" class="Terminal Box">
-          <!-- 상단 우측 박스 내용 -->
-            <div id="weather">
-             <span class="Weather_weather"></span>
-              <span class="Weatehr_city"></span>
-           </div>
+          <!-- 1번째 박스 상단 제목 -->
+         <div class="title">날짜 / 시간</div>
+         </div>
+            <!-- 1번째 좌측 박스 내용 -->
+         <div id="Clock">
+              <span class="Clock__Date"></span>
+              <span class="Clock__Time"></span>
+        </div>
+        </div>
+         <!-- 2번째 좌측 박스 -->
+         <div id="ControlCenterBox_2" class="terminal space shadow">
+          <!-- 2번째 박스 상단 -->
+         <div class="top">
+          <!-- 2번째 박스 상단 버튼 -->
+          <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
           </div>
-       </div>
+          <!-- 2번째 박스 상단 제목 -->
+          <div class="title">날씨 / 위치</div>
+        </div>
+        <!-- 상단 우측 박스 내용 -->
+        <div id="weather">
+          <span></span>
+           <span></span>
+        </div>
       </div>
+      </div>
+  
  
-
     <!-- 본문 컨테이너 -->
-    <div class="MainTextContainer">
+    <div class="TodoContainer">
       <!-- 본문 전체 박스 -->
-      <div id="MainTextBox" class="Terminal Space">
-        <!-- 본문 제목 박스 -->
-        <div class="MainTextTitleBox">ToDoList</div>
+      <div id="TodoBox" class="terminal space shadow">
         <!-- 본문 내용 박스 -->
-        <div class="MainTextBox"></div>
+        <div class="Todo">
           <!-- 본문 내용 폼 -->
-          <form id="MainTextForm">
-            <!-- 본문 내용 입력 -->
+          <form id="Todo-Form">
+            <!--  본문 내용 입력 -->
             <input type="text"
                    type="checkbox"
                    placeholder="Let's write a todolist!"
                    />
           </form>  
-          <ul id="ToDoList"></ul>        
+          <ul id="Todo-List"></ul>        
       </div>
     </div>
-
+    </div>
+  </div>
  <!-- 불러온 컴포넌트 종류 -->
  <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
