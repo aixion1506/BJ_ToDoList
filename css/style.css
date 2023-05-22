@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import 'reset.css';
+@import 'variables.css';
+@import 'login.css';
+@import 'main.css';
+@import 'terminal.css';
+@import 'clock.css';
+@import 'weather.css';
+@import 'todo.css';
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-size: 100% 100%;
+  padding: 100px;
+  box-sizing: border-box;
+  /* font-family: 'Nanum Brush Script', cursive; */
+}
+
+.Hidden {
+  display: none;
+}
